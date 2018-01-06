@@ -1,0 +1,6 @@
+{
+  "//": ["top first", "top second", "background", "text"],
+  "4": ["#013567", "#FEFEFE", "#FE0034", "#FFFFFF"],
+  "200": ["#0606FC", "#FF0100", "#FFFFFF", "#000000"],
+  "default": ["#FEE379", "#FEE379", "#FFFFFF", "#000000"]
+}

@@ -1,0 +1,57 @@
+{
+  "name": "yallega",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "next build",
+    "dev": "nodemon index.js --exec micro --ignore pages --ignore components --ignore lib/client",
+    "lint": "eslint ./ --cache --ignore-path .gitignore",
+    "lint:fix": "eslint ./ --cache --ignore-path .gitignore --fix",
+    "start": "NODE_ENV=production micro",
+    "test": "npm run lint && jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch"
+  },
+  "author": "Sergio Behrends",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^2.4.0",
+    "cheerio": "^0.22.0",
+    "classnames": "^2.2.5",
+    "date-fns": "^1.28.4",
+    "geolib": "^2.0.22",
+    "google-map-react": "^0.24.0",
+    "hex-rgb": "^1.0.0",
+    "isomorphic-fetch": "^2.2.1",
+    "micro": "^7.3.3",
+    "micro-route": "^2.4.0",
+    "module-alias": "^2.0.0",
+    "next": "^2.4.0",
+    "preact": "^8.1.0",
+    "preact-compat": "^3.16.0",
+    "prop-types": "^15.5.10",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-ga": "^2.2.0",
+    "react-icons": "^2.2.5",
+    "react-json-pretty": "^1.6.3",
+    "react-no-ssr": "^1.1.0"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "babel-jest": "^20.0.1",
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-node": "^4.2.2",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^7.0.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "jest": "^20.0.1",
+    "pre-commit": "^1.2.2"
+  }
+}
